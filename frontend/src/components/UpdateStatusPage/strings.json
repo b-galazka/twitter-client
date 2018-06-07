@@ -1,0 +1,8 @@
+{
+    "update": "Aktualizuj",
+    "updating": "Aktualizowanie",
+    "updateFailure": "Aktualizacja statusu nie powiodła się.",
+    "updateSuccess": "Status został zaktualizowany",
+    "statusPlaceholder": "Napisz coś...",
+    "pageTitle": "Aktualizacja statusu"
+}

@@ -1,0 +1,75 @@
+@import '../../shared/config';
+
+.profile-page {
+    &__loader, &__error {
+        padding: 150px 10px 0 10px;
+        text-align: center;
+    }
+
+    &__error {
+        color: $red;
+    }
+}
+
+.profile {
+
+    &__basic-info {
+        padding: 0 10px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__image {
+        border-radius: 50%;
+        border: 1px solid $blue;
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+
+    &__name {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__nickname {
+        color: $grey;
+    }
+
+    &__tabs {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+
+    &__tab {
+        flex: 1 0 auto;
+        border-right: 1px solid $blue;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        @media (max-width: $maxMobileWidth) {
+            width: 100%;
+            border: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 7px 20px;
+            color: $blue;
+            background-color: #FFF;
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+        }
+
+        &--active button {
+            color: #FFF;
+            background-color: $blue;
+            cursor: default;
+        }
+    }
+}

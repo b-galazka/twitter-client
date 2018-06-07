@@ -1,0 +1,53 @@
+@import '../../shared/config';
+
+.button--update-status {
+    padding: 10px 20px;
+    min-width: 200px;
+    display: block;
+
+    @media (max-width: $maxMobileWidth) {
+        width: 100%;
+    }
+}
+
+.update-status-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__textarea {
+        width: 100%;
+        min-height: 150px;
+        margin-bottom: 20px;
+        resize: vertical;
+        padding: 10px;
+        border: 1px solid $blue;
+        border-radius: 0;
+        background-color: #FFF;
+
+        @media (max-width: $maxAppWidth) {
+            border-left: none;
+            border-right: none;
+        }
+        
+        &:disabled {
+            cursor: not-allowed;
+            background-color: $lightGrey;
+        }
+    }
+
+    &__message {
+        width: 100%;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-align: center;
+
+        &--success {
+            color: $blue;
+        }
+
+        &--failure {
+            color: $red;
+        }
+    }
+}

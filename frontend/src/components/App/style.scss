@@ -1,0 +1,21 @@
+@import '../../shared/config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    font-size: 15px;
+}
+
+// for IE
+main {
+    display: block;
+}
+
+a {
+    color: inherit;
+}

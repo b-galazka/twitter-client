@@ -1,0 +1,14 @@
+{
+    "photoThumbnail": "miniatura zdjęcia załączonego do tweeta",
+    "days": ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"],
+    "yesterday": "Wczoraj",
+    "hoursAgo": "godz. temu",
+    "minutesAgo": "min. temu",
+    "justNow": "Teraz",
+    "favourites": "Polubień",
+    "retweets": "Podań dalej",
+    "videos": "Filmy",
+    "photos": "Zdjęcia",
+    "replyToPart1": "Ten tweet jest odpowiedzią na",
+    "replyToPart2": "tego tweeta"
+}

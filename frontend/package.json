@@ -1,0 +1,61 @@
+{
+    "name": "twitter-client-frontend",
+    "version": "1.0.0",
+    "description": "Frontend for simple twitter client.",
+    "main": "src/index.jsx",
+    "scripts": {
+        "build": "webpack -p --config webpack.prod.js",
+        "watch": "webpack --watch --config webpack.dev.js",
+        "test": "jest"
+    },
+    "author": "b-galazka",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "classnames": "^2.2.5",
+        "js-cookie": "^2.2.0",
+        "react": "^16.1.1",
+        "react-dom": "^16.1.1",
+        "react-redux": "^5.0.5",
+        "react-router-dom": "^4.1.1",
+        "redux": "^4.0.0",
+        "redux-saga": "^0.16.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^8.4.1",
+        "babel-core": "^6.25.0",
+        "babel-loader": "^7.1.1",
+        "babel-polyfill": "^6.23.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "browserslist": "^3.2.6",
+        "css-loader": "^0.28.4",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^22.4.3",
+        "node-sass": "^4.7.2",
+        "postcss-import": "^11.0.0",
+        "postcss-loader": "^2.0.6",
+        "postcss-scss": "^1.0.2",
+        "prop-types": "^15.5.10",
+        "raf": "^3.4.0",
+        "react-test-renderer": "^16.2.0",
+        "sass-loader": "^7.0.1",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.6.0",
+        "webpack-cli": "^2.0.15"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "jest": {
+        "moduleNameMapper": {
+            "\\.scss$": "identity-obj-proxy"
+        },
+        "setupTestFrameworkScriptFile": "raf/polyfill"
+    }
+}

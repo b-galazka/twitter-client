@@ -1,0 +1,90 @@
+@import '../../shared/config';
+
+.tweet {
+    margin-top: 100px;
+    border-bottom: 1px solid $blue;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &__header {
+        display: flex;
+        padding: 0 10px;
+    }
+
+    &__avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    &__image {
+        border-radius: 50%;
+
+        // fix for Firefox
+        align-self: center;
+        box-sizing: content-box;
+    }
+
+    &__info {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__author-name {
+        font-weight: bold;
+    }
+
+    &__author-nickname {
+        margin-left: 10px;
+        color: $grey;
+    }
+
+    &__time {
+        color: $grey;
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+
+    &__reply-info {
+        text-align: center;
+        padding: 10px 10px 0 10px;
+
+        a {
+            color: $blue;
+        }
+    }
+
+    &__content {
+        padding: 0 10px;
+        margin: 20px 0;
+        white-space: pre-wrap;
+        word-break: break-word;   
+    }
+
+    &__text a {
+        color: $blue;
+    }
+
+    &__stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        p {
+            text-align: center;
+            flex: 0 0 auto;
+            margin: 5px 10px;
+
+            @media (max-width: $maxMobileWidth) {
+                width: 100%;
+                flex: 1 1 auto;
+            }
+        }
+    }
+}

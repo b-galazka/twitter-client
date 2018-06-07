@@ -1,0 +1,9 @@
+@import '../../shared/config';
+
+.button--show-more {
+    padding: 10px 50px;
+
+    @media (max-width: $maxMobileWidth) {
+        width: 100%;
+    }
+}

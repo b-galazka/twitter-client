@@ -1,0 +1,30 @@
+@import '../../shared/config';
+
+.quoted-tweet {
+    border: 1px solid $blue;
+    margin-bottom: 20px;
+
+    &:hover {
+        border-color: $darkBlue;
+        background-color: $lightGrey;
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+
+    &__author-name {
+        font-weight: bold;
+    }
+
+    &__author-nickname {
+        margin-left: 10px;
+        color: $grey;
+    }
+
+    &__content {
+        margin-top: 5px;
+    }
+}
